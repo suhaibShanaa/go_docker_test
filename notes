@@ -10,3 +10,7 @@ if you need to run it on the air with hot reloading, you can use the following c
     go install github.com/cosmtrek/air@latest
 
 
+
+docker run -p 8080:8080 --rm -v $(pwd):/app -v /app/tmp --name my-go-docker-air my-go-docker
+
+

@@ -19,4 +19,4 @@ COPY . ./
 EXPOSE 8080
 
 # Set the default command to run Air
-CMD ["air"]
+CMD ["air", "-c", ".air.toml"]

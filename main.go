@@ -9,7 +9,7 @@ import (
 func main() {
 	// Define a simple handler
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Hello, you've reached the serverxxxxxxxxxxx!")
+		fmt.Fprintf(w, "Hello, you've reached the serverxxxxxxxxxx   !")
 	})
 
 	// Log that the server is starting

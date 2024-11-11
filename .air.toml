@@ -1,0 +1,24 @@
+# .air.toml
+# Configure Air to automatically build and restart your Go application
+
+[build]
+    # Command to build the project
+    cmd = "go build -o main main.go"
+
+    # Binary to watch
+    bin = "main"
+
+    # Working directory
+    working_dir = "."
+
+    # Pattern to watch
+    include_ext = ["go"]
+
+    # Exclude directory from triggering a restart
+    exclude_dir = ["tmp", "vendor"]
+
+    # Command to run after a successful build
+    run_after_build = "chmod +x main"
+
+[log]
+    level = "debug"
